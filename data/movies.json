@@ -1,48 +1,42 @@
 [
   {
-    "id": 1,
+    "genre": "action",
     "title": "The Jason Borne series",
     "actor": "Matt Damon",
-    "genre": "action",
     "reason": "This is awesome. Recommended by Jaive",
     "location": "Netflix"
   }, {
-    "id": 2,
+    "genre": "action",
     "title": "Beast of No Nation",
     "actor": "Idris Elba",
-    "genre": "action",
     "reason": "This [movie] is ridiculous. Recommended by Jaive",
     "location": "Netflix"
   },
   {
-    "id": 3,
-    "title": "50 First Days",
-    "actor": "Drew Barrymore",
     "genre": "romantic",
+    "title": "50in data folder First Days",
+    "actor": "Drew Barrymore",
     "recommender": "Cause it'll make you fall in love. Recommended by Tealiie",
     "location": "Lightbox"
   },
   {
-    "id": 4,
+    "genre": "romantic",
     "title": "He's Just Not That Into You",
     "actor": "Jennifer...? ",
-    "genre": "romantic",
     "recommender": "This will give you reason to up your game this weekend. Recommended by Joolz",
     "location": "Netflix"
   },
   {
-    "id": 5,
+    "genre": "comedy",
     "title": "Zoolander",
     "actor": "Ben Stiller",
-    "genre": "comedy",
     "recommender": "You will never be as good looking as Derek. Recommended by Joolz",
     "location": "Neon"
   },
   {
-    "id": 6,
+    "genre": "comedy",
     "title": "Superbad",
     "actor": "Michael Cera",
-    "genre": "comedy",
     "recommender": "The typical coming of age story. Recommended by Tina",
     "location": "Netflix"
   }
