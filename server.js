@@ -15,7 +15,7 @@ var app = express()
 //   // app.use(express.static(path.join(__dirname, 'public'))
 //
 app.get('/', routes.getGenre)
-app.post('/your-rec', routes.yourRec)
+  // app.post('/your-rec', routes.yourRec)
   // app.post('/[TK TK TK]', routes.newPost)
 
 app.listen(PORT, function () {
