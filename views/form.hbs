@@ -2,36 +2,37 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
-    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-    <link rel="stylesheet" href="styles.css">
-    <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+  <link rel="stylesheet" href="styles.css">
+  <title></title>
 </head>
 
 <body>
+  <div class="main_image"><img src="/images/film_reel.png" alt""></div>
   <div class="w3-container">
-  <h1>Enter your own Friday Flick recommendation</h1>
-  <!-- {{#each movie}} -->
-        <div class="movie_entry">
-          <form action="" method="get">
-            <p>genre (choose from comedy, action and rom com): <input type:"text" placeholder: "add film genre" {{genre}}></p>
-            <p>title: <input type:"submit" placeholder: "add title" {{title}}</p>
-            <p>actor: <input type:"submit" placeholder: "add main actors"{{actor}}</p>
-            <p>why this films is awesome: <input type:"submit" placeholder: "add title"{{reason}}</p>
-            <p>where to find film: <input type:"submit" placeholder:"add title"{{location}}</p>
-        </div>
-  <!--   {{/each}} -->
-    <br>
-    <a href="/">
+    <h1>Enter your own Friday Flick recommendation</h1>
+    <!-- {{#each movie}} -->
+    <div class="movie_entry">
+      <form action="" method="get">
+        <p>genre (choose from comedy, action and rom com): <input type:"text" placeholder: "add film genre" {{genre}}></p>
+        <p>title: <input type:"submit" placeholder: "add title" {{title}}</p>
+        <p>actor: <input type:"submit" placeholder: "add main actors"{{actor}}</p>
+        <p>why this films is awesome: <input type:"submit" placeholder: "add title"{{reason}}</p>
+        <p>where to find film: <input type:"submit" placeholder:"add title"{{location}}</p>
+      </div>
+      <!--   {{/each}} -->
+      <br>
+      <a href="/">
         <button>SUBMIT </button>
-    </a>
-    <br>
-    <a href="/index.html">
+      </a>
+      <br>
+      <a href="/index.html">
         <button>HOME</button>
-    </a>
-  </div>
-</body>
+      </a>
+    </div>
+  </body>
 
-</html>
+  </html>
