@@ -6,13 +6,25 @@ module.exports = {
 }
 
 function getGenre(req, res) {
-  db.getGenre(function (err, movie) {
-    var vm = {
-      movie = movie
+  var genre = req.query.genre
+  db.getMovies(genre, function (err, movies) {
+    if (err) {
+      return res.send(err.message)
     }
-    res.render('home', vm)
+    res.render('index', movies)
   })
 }
+
+
+
+
+// db.getMovie(function (err, movie) {
+//   var vm = {
+//     movie = movie
+//   }
+//   res.render('home', vm)
+// })
+// }
 //
 // function yourRec(req, res) {
 //   var yourRec = {

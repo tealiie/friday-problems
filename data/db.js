@@ -2,17 +2,17 @@ var fs = require('fs')
 var path = require('path')
 
 module.exports = {
-  getGenre: getGenre
+  getMovies: getMovies
     // yourRec: yourRec
 }
 
-function getGenre(callback) {
+function getMovies(genre, callback) {
   fs.readFile('./data/movies.json', function (err, json) {
     var movieEntries = JSON.parse(json)
-    var newMovie = movieEntries.filter(function (item) {
-      return item.genre === genre
+    var movies = movieEntries.filter(function (movie) {
+      return movie.genre === genre
     })
-    callback(null, movieEntries)
+    callback(null, movies)
   })
 }
 
