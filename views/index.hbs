@@ -2,6 +2,29 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+	<style>
+	body {
+		background-color: linen;
+	}
+	select {
+		background: #f4e1d2;
+		width: 268px;
+		padding: 5px;
+		font-size: 16px;
+		line-height: 1;
+		border: 1;
+		border-color: black;
+		border-radius: 0;
+		height: 34px;
+		-webkit-appearance: none;
+	}
+	</style>
+
+	<link rel="stylesheet" href="styles.css">
 	<title>Friday Problems</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
@@ -24,6 +47,7 @@
 	</style>
 </head>
 <body>
+	<div class="main_image"><img src="/images/film_reel.png" alt""></div>
 	<div class="w3-container">
 		<h1> Make your movie selection</h1>
 		<p>Make your movie selection here, choose your genre and solve your Friday night problem</p>
@@ -60,14 +84,14 @@
 								{{/each}}
 							</table>
 
+
 						</p><br>
 						<p>Don't have the movie you're looking for? Submit a suggestion of your own.</p>
 						<a href="/form.html"><button>Make a submission</button></a>
 						{{/if}}
 					</div>
 
-
-
+					
 				</body>
 				</html>
 

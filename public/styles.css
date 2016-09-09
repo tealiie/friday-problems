@@ -1,0 +1,19 @@
+link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css"
+link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"
+link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css"
+
+body {
+  background-color: linen;
+}
+select {
+  background: #f4e1d2;
+  width: 268px;
+  padding: 5px;
+  font-size: 16px;
+  line-height: 1;
+  border: 1;
+  border-color: black;
+  border-radius: 0;
+  height: 34px;
+  -webkit-appearance: none;
+}

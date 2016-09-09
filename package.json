@@ -1,11 +1,12 @@
 {
   "name": "friday-problems",
   "version": "1.0.0",
-  "description": "",
+  "description": "Too tired to decide what to do come Friday? Watch a movie. Find one here.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node-inspector & nodemon --debug server.js"
+    "start": "node-inspector & nodemon --debug server.js",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
