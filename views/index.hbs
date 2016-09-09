@@ -14,11 +14,13 @@
 	{{/each}} -->
 
 <form action="./data/movies.json" method="get">
-<select name="movie selection">
-	<option value="./data/movies/{{action}}" class="value">Action</a>
-	<option value="./data/movies/{{comedy}}" class="value">Comedy</a>
-	<option value="./data/movies/{{romantic}}" class="value">Romantic comedy</a>
+<select name="genre">
+	<option value="no selection" class="value">Make a selection</a>
+	<option value="action" class="value">Action</a>
+	<option value="comedy" class="value">Comedy</a>
+	<option value="romantic" class="value">Romantic comedy</a>
 </select>
+<input type="submit" value="submit">
 </form>
 
 <!-- Here is where you will find your Friday night movie -->
