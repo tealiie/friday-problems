@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Friday Problems</title>
+</head>
+
+<body>
+    <h2>Enter your own Friday Problems recommendation!</h2>
+  <!-- {{#each movie}} -->
+        <div class="movie_entry">
+          <form action="" method="post">
+            <p>Genre: <input type="text" name ="genre" placeholder= "Action / Comedy / Rom-Com" ></p>
+
+            <p>Title: <input type="text" name="title" placeholder="Title of movie" ></p>
+
+            <p>Actor: <input type="text" name="actor" placeholder="Who's the main actor?"></p>
+
+            <p>Reason: <input type="text" name="recommender" placeholder="Tell us why this movie is awesome"></p>
+
+            <p>Location: <input type="text" name="location" placeholder="Where you can watch this movie (Netflix, in theatres, etc)"</p><br><br>
+            <input type="submit" value="Submit" class="submit">
+          </form>
+        </div>
+  <!--   {{/each}} -->
+
+    <a href="/">
+        <button>HOME</button>
+    </a>
+</body>
+
+</html>

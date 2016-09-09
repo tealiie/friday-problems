@@ -2,7 +2,7 @@ var db = require('./data/db')
 
 module.exports = {
   getGenre: getGenre,
-  // newPost: newPost
+  getRecs: getRec
 }
 
 function getGenre(req, res) {
