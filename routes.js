@@ -11,7 +11,10 @@ function getGenre(req, res) {
     if (err) {
       return res.send(err.message)
     }
-    res.render('index', movies)
+    var vm = {
+      movies: movies
+    }
+    res.render('index', vm)
   })
 }
 

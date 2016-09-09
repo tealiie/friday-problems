@@ -13,7 +13,7 @@
   <li><a href="genres/{{action}}{{comedy}}{{rom-com}}"></a></li>
 	{{/each}} -->
 
-<form action="./data/movies.json" method="get">
+<form action="/" method="get">
 <select name="genre">
 	<option value="no selection" class="value">Make a selection</a>
 	<option value="action" class="value">Action</a>
@@ -24,18 +24,28 @@
 </form>
 
 <!-- Here is where you will find your Friday night movie -->
-
+{{#if movies}}
 <h2>Here's your Friday problem solved</h2>
 <p>
-	Movie suggestions: We recommend... <br/>
-	{{action}}
-	{{comedy}}
-	{{romantic}}
+	Movie suggestions: We recommend... <br><br>
+
+	<table>
+		{{#each movies}}
+			<tr><td>....</td></tr>
+			<tr><td><strong> Title </strong>{{title}}</td></tr>
+			<tr><td> Lead Actors {{actor}}</td></tr>
+			<tr><td> Reason {{recommender}}</td></tr>
+			<tr><td> Watch on {{location}}</td></tr>
+			<tr><td>....</td></tr>
+			{{/each}}
+	</table>
+
 </p>
-
 <p>Don't have the movie you're looking for? Submit a suggestion of your own.</p>
-
 <button>Make a submission</button>
+{{/if}}
+
+
 
 </body>
 </html>

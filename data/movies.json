@@ -3,18 +3,18 @@
     "genre": "action",
     "title": "The Jason Borne series",
     "actor": "Matt Damon",
-    "reason": "This is awesome. Recommended by Jaive",
+    "recommender": "This is awesome. Recommended by Jaive",
     "location": "Netflix"
   }, {
     "genre": "action",
     "title": "Beast of No Nation",
     "actor": "Idris Elba",
-    "reason": "This [movie] is ridiculous. Recommended by Jaive",
+    "recommender": "This movie is ridiculous. Recommended by Jaive",
     "location": "Netflix"
   },
   {
     "genre": "romantic",
-    "title": "50in data folder First Days",
+    "title": "50 First Days",
     "actor": "Drew Barrymore",
     "recommender": "Cause it'll make you fall in love. Recommended by Tealiie",
     "location": "Lightbox"
