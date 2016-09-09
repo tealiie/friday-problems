@@ -1,8 +1,7 @@
 var db = require('./data/db')
 
 module.exports = {
-  getGenre: getGenre,
-  getRecs: getRec
+  getGenre: getGenre
 }
 
 function getGenre(req, res) {
@@ -17,6 +16,8 @@ function getGenre(req, res) {
     res.render('index', vm)
   })
 }
+
+
 
 
 
