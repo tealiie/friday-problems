@@ -5,52 +5,53 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 	<link rel="stylesheet" href="styles.css">
 	<title>Friday Problems</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<h1> Make your movie selection</h1>
-<p>Make your movie selection here, choose your genre and solve your Friday night problem</p>
+<body>
+	<div class="w3-container">
+		<h1> Make your movie selection</h1>
+		<p>Make your movie selection here, choose your genre and solve your Friday night problem</p>
 
-<!-- {{#each genres}} -->
-<!-- entries is properties of object
-  <li><a href="genres/{{action}}{{comedy}}{{rom-com}}"></a></li>
-	{{/each}} -->
+		<!-- {{#each genres}} -->
+		<!-- entries is properties of object
+		  <li><a href="genres/{{action}}{{comedy}}{{rom-com}}"></a></li>
+			{{/each}} -->
 
-<form action="/" method="get">
-<select name="genre">
-	<option value="no selection" class="value">Make a selection</a>
-	<option value="action" class="value">Action</a>
-	<option value="comedy" class="value">Comedy</a>
-	<option value="romantic" class="value">Romantic comedy</a>
-</select>
-<input type="submit" value="submit">
-</form>
+		<form action="/" method="get">
+		<select name="genre">
+			<option value="no selection" class="value">Make a selection</a>
+			<option value="action" class="value">Action</a>
+			<option value="comedy" class="value">Comedy</a>
+			<option value="romantic" class="value">Romantic comedy</a>
+		</select>
+		<input type="submit" value="submit">
+		</form>
 
-<!-- Here is where you will find your Friday night movie -->
-{{#if movies}}
-<h2>Here's your Friday problem solved</h2>
-<p>
-	Movie suggestions: We recommend... <br><br>
+		<!-- Here is where you will find your Friday night movie -->
+		{{#if movies}}
+		<h2>Here's your Friday problem solved</h2>
+		<p>
+			Movie suggestions: We recommend... <br><br>
 
-	<table>
-		{{#each movies}}
-			<tr><td>....</td></tr>
-			<tr><td><strong> Title </strong>{{title}}</td></tr>
-			<tr><td> Lead Actors {{actor}}</td></tr>
-			<tr><td> Reason {{recommender}}</td></tr>
-			<tr><td> Watch on {{location}}</td></tr>
-			<tr><td>....</td></tr>
-			{{/each}}
-	</table>
+			<table>
+				{{#each movies}}
+					<tr><td>....</td></tr>
+					<tr><td><strong> Title </strong>{{title}}</td></tr>
+					<tr><td> Lead Actors {{actor}}</td></tr>
+					<tr><td> Reason {{recommender}}</td></tr>
+					<tr><td> Watch on {{location}}</td></tr>
+					<tr><td>....</td></tr>
+					{{/each}}
+			</table>
 
-</p>
-<p>Don't have the movie you're looking for? Submit a suggestion of your own.</p>
-<button>Make a submission</button>
-{{/if}}
-
-
-
+		</p>
+		<p>Don't have the movie you're looking for? Submit a suggestion of your own.</p>
+		<button>Make a submission</button>
+		{{/if}}
+	</div>
 </body>
 </html>
 
