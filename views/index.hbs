@@ -7,17 +7,20 @@
 </head>
 <h1> Make your movie selection</h1>
 <p>Make your movie selection here, choose your genre and solve your Friday night problem</p>
-<select>
-<!-- {{#each genres}} -->
-<!-- entries is properties of object
-  <li><a href="genres/{{action}}{{comedy}}{{rom-com}}"></a></li>
-	{{/each}} -->
-	<option a href="movies{{action}}" class="value"><value>Action </value></a>
-	<option a href="movies/{{comedy}}" class="value"><value>Comedy </value></a>
-	<option a href="movies/{{rom-com}}" class="value"><value>Romantic comedy </value></a>
-
+<form action="/movies.json" method="get">
+<select name="movie selection">
+	<option  value="movies/{{action}}" class="value">Action</a>
+	<option a href="movies/{{comedy}}" class="value">Comedy</a>
+	<option a href="movies/{{rom-com}}" class="value">Romantic comedy</a>
 </select>
-  <!-- 	<a href="new" class="button"><button>action </button></a> -->
+</form>
+<button type="Make Your Submission"</button>
 
 </body>
 </html>
+
+<!-- <select name="forma">
+    <option value="Home"><a href="home.php">Home</a></option>
+    <option value="Contact"><a href="contact.php">Contact</a></option>
+    <option value="Sitemap"><a href="sitemap.php">Sitemap</a></option>
+</select> -->
