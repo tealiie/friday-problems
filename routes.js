@@ -1,7 +1,8 @@
 var db = require('./data/db')
 
 module.exports = {
-  getGenre: getGenre
+  getGenre: getGenre,
+  newPost: newPost
 }
 
 function getGenre(req, res) {
@@ -17,6 +18,11 @@ function getGenre(req, res) {
   })
 }
 
+function newPost(req, res) {
+  db.saveMovie(req.body, function (err) {
+    res.redirect('/')
+  })
+}
 
 
 

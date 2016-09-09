@@ -2,7 +2,8 @@ var fs = require('fs')
 var path = require('path')
 
 module.exports = {
-  getMovies: getMovies
+  getMovies: getMovies,
+  saveMovie: saveMovie
     // yourRec: yourRec
 }
 
@@ -16,6 +17,18 @@ function getMovies(genre, callback) {
   })
 }
 
-// function yourRec(callback) {
-//   fs.writeFile
-// }
+function saveMovie(entry, callback) {
+  var movieEntry = path.join(__dirname, './movies.json')
+  fs.readFile(movieEntry, function (err, data) {
+    if (!err) {
+      var newmovieArr = JSON.parse(data)
+      newmovieArr.push(entry)
+      var newMovie = JSON.stringify(newmovieArr)
+      fs.writeFile(movieEntry, newMovie, function (err) {
+        if (!err) {
+          callback()
+        }
+      })
+    }
+  })
+}

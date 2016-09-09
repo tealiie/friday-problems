@@ -2,35 +2,55 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
-    <link rel="stylesheet" href="../styles.css">
-    <title>Friday Problems</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+  <style> body {
+    background-color: linen;
+  }
+  select {
+    background: yellow;
+    width: 268px;
+    padding: 5px;
+    font-size: 16px;
+    line-height: 1;
+    border: 1;
+    border-color: black;
+    border-radius: 0;
+    height: 34px;
+    -webkit-appearance: none;
+  }
+  </style>
+  <title>Friday Problems</title>
 </head>
 
 <body>
+  <div class="w3-container">
     <h2>Enter your own Friday Problems recommendation!</h2>
-  <!-- {{#each movie}} -->
-        <div class="movie_entry">
-          <form action="" method="post">
-            <p>Genre: <input type="text" name ="genre" placeholder= "Action / Comedy / Rom-Com" ></p>
 
-            <p>Title: <input type="text" name="title" placeholder="Title of movie" ></p>
+    <div class="movie_entry">
+      <form action="/new" method="post">
+        <p>Genre: <input type="text" name="genre" placeholder= "Action / Comedy / Rom-Com" ></p>
 
-            <p>Actor: <input type="text" name="actor" placeholder="Who's the main actor?"></p>
+        <p>Title: <input type="text" name="title" placeholder="Title of movie" ></p>
 
-            <p>Reason: <input type="text" name="recommender" placeholder="Tell us why this movie is awesome"></p>
+        <p>Actor: <input type="text" name="actor" placeholder="Who's the main actor?"></p>
 
-            <p>Location: <input type="text" name="location" placeholder="Where you can watch this movie (Netflix, in theatres, etc)"</p><br><br>
-            <input type="submit" value="Submit" class="submit">
-          </form>
-        </div>
-  <!--   {{/each}} -->
+        <p>Reason: <input type="text" name="recommender" placeholder="Tell us why this movie is awesome"></p>
+
+        <p>Location: <input type="text" name="location" placeholder="Where you can watch this movie (Netflix, in theatres, etc)"</p><br><br>
+        <input type="submit" value="Submit" class="submit">
+      </form>
+    </div>
 
     <a href="/">
-        <button>HOME</button>
+      <button>HOME</button>
     </a>
+  </div>
 </body>
 
 </html>

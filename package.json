@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node-inspector & nodemon --debug server.js"
   },
   "repository": {
     "type": "git",
@@ -16,10 +17,10 @@
     "url": "https://github.com/tina-trenkner/friday-problems/issues"
   },
   "homepage": "https://github.com/tina-trenkner/friday-problems/#readme",
-  "author": "",
-  "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.15.2",
     "express": "^4.14.0",
-    "express-handlebars": "^3.0.0"
+    "express-handlebars": "^3.0.0",
+    "node-inspector": "^0.12.8"
   }
 }
